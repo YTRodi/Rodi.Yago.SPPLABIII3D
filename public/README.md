@@ -1,1 +1,1 @@
-# practica_splab3
+# Segundo Parcial Laboratorio III - 3D
