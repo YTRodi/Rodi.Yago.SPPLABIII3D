@@ -1,0 +1,114 @@
+{
+  "anuncios": [
+    {
+      "id": 1,
+      "titulo": "Mitsubishi",
+      "transaccion": "Venta",
+      "descripcion": "i-MiEV",
+      "precio": 4722,
+      "num_puertas": 4,
+      "num_KMs": 179934,
+      "potencia": 118
+    },
+    {
+      "id": 2,
+      "titulo": "Lexus",
+      "transaccion": "Alquiler",
+      "descripcion": "ES",
+      "precio": 3068,
+      "num_puertas": 5,
+      "num_KMs": 103188,
+      "potencia": 146
+    },
+    {
+      "id": 3,
+      "titulo": "Cadillac",
+      "transaccion": "Venta",
+      "descripcion": "Escalade ESV",
+      "precio": 3816,
+      "num_puertas": 5,
+      "num_KMs": 95326,
+      "potencia": 149
+    },
+    {
+      "id": 4,
+      "titulo": "Jeep",
+      "transaccion": "Alquiler",
+      "descripcion": "Patriot",
+      "precio": 3928,
+      "num_puertas": 3,
+      "num_KMs": 185963,
+      "potencia": 140
+    },
+    {
+      "id": 5,
+      "titulo": "Mitsubishi",
+      "transaccion": "Venta",
+      "descripcion": "Pajero",
+      "precio": 2391,
+      "num_puertas": 4,
+      "num_KMs": 53948,
+      "potencia": 109
+    },
+    {
+      "id": 6,
+      "titulo": "Audi",
+      "transaccion": "Venta",
+      "descripcion": "A4",
+      "precio": 2149,
+      "num_puertas": 5,
+      "num_KMs": 158818,
+      "potencia": 102
+    },
+    {
+      "id": 7,
+      "titulo": "Porsche",
+      "transaccion": "Alquiler",
+      "descripcion": "911",
+      "precio": 1708,
+      "num_puertas": 4,
+      "num_KMs": 163376,
+      "potencia": 139
+    },
+    {
+      "id": 8,
+      "titulo": "Volvo",
+      "transaccion": "Venta",
+      "descripcion": "240",
+      "precio": 4028,
+      "num_puertas": 5,
+      "num_KMs": 239436,
+      "potencia": 117
+    },
+    {
+      "id": 9,
+      "titulo": "GMC",
+      "transaccion": "Alquiler",
+      "descripcion": "Canyon",
+      "precio": 1375,
+      "num_puertas": 3,
+      "num_KMs": 101078,
+      "potencia": 139
+    },
+    {
+      "id": 10,
+      "titulo": "Fiat Siena",
+      "transaccion": "Alquiler",
+      "descripcion": "Fiat Siena",
+      "precio": 123,
+      "num_puertas": 5,
+      "num_KMs": 123,
+      "potencia": 123
+    },
+    {
+      "id": 11,
+      "titulo": "Lamborghini ",
+      "transaccion": "Alquiler",
+      "descripcion": "Veneno",
+      "precio": 5000000,
+      "num_puertas": 3,
+      "num_KMs": 500,
+      "potencia": 310
+    }
+  ]
+}

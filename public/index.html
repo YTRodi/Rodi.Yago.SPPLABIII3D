@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+        <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="./js/main.js" type="module"></script>
+        <title>SP Lab III - Rodi Yago</title>
+    </head>
+    <body>
+
+        <!-- =================== Section #1 =================== -->
+        <section class="section_1 container-fluid p-0 text-uppercase">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light text-center">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./logo.png" alt="Logo" width="200px">
+                    </a>
+
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="navbar-nav mr-auto"></div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#"><strong>Nosotros</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#"><strong>Anuncios</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#"><strong>Blog</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#"><strong>Contacto</strong></a>
+                            </li>
+                        </ul>                       
+                    </div>
+                </nav>
+            </header>
+
+                <div class="container-fluid text-center heading p-0">
+                    <h1 class="h1">Administración</h1>
+                    <img src="./img/concesionaria.jpg" alt="Imagen de la concesionaria de autos" width="100%">
+                </div>
+            </div>
+        </section>
+
+        <!-- =================== Section #2 ( Formulario ) =================== -->
+
+        <div class="section_2 container pt-3 pb-3 animate__animated animate__fadeInLeft">
+
+            <div class="row">
+
+                <!-- #1 Columna formulario -->
+                <div class="col">
+                    <form id="form-principal" class="text-uppercase">
+                        
+                        <!-- ID -->
+                        <div class="form-group row justify-content-center">
+                            <label class="desaparecer col-sm-4 col-lg-2 col-form-label" for="txtId" id="labelId">id</label>
+                            <div class="col-sm-8 col-lg-5">
+                                <input class="desaparecer form-control" type="text" id="txtId" name="id" disabled>
+                            </div>
+                        </div>
+
+                        <!-- TITULO -->
+                        <div class="form-group row justify-content-center">
+                            <label class="col-sm-4 col-lg-2 col-form-label" for="txtTitulo">Título</label>
+                            <div class="col-sm-8 col-lg-5">
+                                <input class="form-control" type="text" id="txtTitulo" name="titulo" placeholder="Título" required>
+                            </div>
+                        </div>
+                
+                        <!-- TRANSACCIÓN-->
+                        <div class="form-group row justify-content-center">
+                            <label class="col-sm-4 col-md-4 col-lg-2 col-form-label" for="transaccion">Transacción</label>
+                
+                            <div class="col-sm-6 col-md-8 col-lg-5">
+                                <div class="pr-3 custom-control custom-radio custom-control-inline">
+                                    <input class="custom-control-input" type="radio" id="rdoV" name="transaccion" value="Venta" checked>
+                                    <label class="custom-control-label" for="rdoV">Venta</label>
+                                  </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input class="custom-control-input" type="radio" id="rdoA" name="transaccion" value="Alquiler">
+                                    <label class="custom-control-label" for="rdoA">Alquiler</label>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- DESCRIPCION -->
+                        <div class="form-group row justify-content-center" >
+                            <label class="col-sm-4 col-lg-2 col-form-label" for="txtDescripcion">Descripción</label>
+                            <div class="col-sm-8 col-lg-5">
+                                <input class="form-control" type="text" id="txtDescripcion" name="descripcion" placeholder="Descripción" required>
+                            </div>
+                        </div>
+                
+                        <!-- PRECIO -->
+                        <div class="form-group row justify-content-center">
+                            <label class="col-sm-4 col-lg-2 col-form-label" for="numbPrecio">Precio</label>
+                            <div class="col-sm-8 col-lg-5">
+                                <input class="form-control" type="number" id="numbPrecio" name="precio" min="0" value="0" required>
+                            </div>
+                        </div>
+                        
+                        <!-- PUERTAS -->
+                        <div class="form-group row justify-content-center">
+                            <!-- acá va una imagen -->
+                            <label class="icon-form col-sm-4 col-lg-2 col-form-label" for="numbPuertas">
+                                <img src="./img/door_car.ico" alt="Imagen puertas del auto" width="35px"">
+                            </label>
+                            <div class="col-sm-8 col-lg-5">
+                                <input class="form-control" type="number" id="numbPuertas" name="puertas" min="3" max="5" placeholder="Puertas" required>
+                            </div>
+                        </div>
+                
+                        <!-- KMs -->
+                        <div class="form-group row justify-content-center">
+                            <label class="icon-form col-sm-4 col-lg-2 col-form-label" for="numbKMs">
+                                <img src="./img/kmcar.ico" alt="Imagen kms del auto" width="35px">
+                            </label>
+                            <div class="col-sm-8 col-lg-5">
+                                <input class="form-control" type="number" id="numbKMs" name="kms" placeholder="KMs" required>
+                            </div>
+                        </div>
+                
+                        <!-- POTENCIA -->
+                        <div class="form-group row justify-content-center">
+                            <label class="icon-form col-sm-4 col-lg-2 col-form-label" for="numbPotencia">
+                                <span>
+                                    <i class="fas fa-car-battery"></i>
+                                </span>
+                            </label>
+                            <div class="col-sm-8 col-lg-5">
+                                <input class="form-control" type="number" id="numbPotencia" name="potencia" placeholder="Potencia" required>
+                            </div>
+                        </div>
+                
+
+                        <!-- BOTONES! -->
+                        <div class="pt-3 form-group row justify-content-around">
+                            <div class="row"> 
+                                <div class="col" id="divAlta"> 
+                                    <button class="btn btn-success" id="btnAlta">
+                                        <i class="far fa-save fa-lg"></i>
+                                        Guardar
+                                    </button>
+                                </div> 
+
+                                <div class="col desaparecer" id="divBaja"> 
+                                    <button class="desaparecer btn btn-dark desaparecer" id="btnBaja">
+                                        <i class="far fa-thumbs-down fa-lg"></i>
+                                        Baja Anuncio
+                                    </button>
+                                </div> 
+
+
+                                <div class="col desaparecer" id="divModif"> 
+                                    <button class="desaparecer btn btn-primary" id="btnModif">
+                                        <i class="far fa-edit"></i>
+                                        Modificar Anuncio
+                                    </button>
+                                </div> 
+
+
+                                <div class="col"> 
+                                    <button class="btn btn-danger" id="btnCancelar">
+                                        <i class="fas fa-ban fa-lg"></i>
+                                        Cancelar
+                                    </button>
+                                </div>
+                            </div> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- =================== Section #3 ( Spinner ) =================== -->
+
+        <div class="section_3 container">
+            <div class="row pb-3">
+                <div class="col text-center" id="divSpinner">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- =================== Section #4 ( Filtros ) =================== -->
+
+        <div class="section_4 container animate__animated animate__fadeInRight"">
+            <div class="row text-center">
+                <div class="col">
+                    <h3>Filtros</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container container animate__animated animate__fadeInRight" style="border: 1px solid black; border-radius: 15px;">
+            <div class="row text-center pb-5">
+                <div class="col-6 pt-3"">
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Filtrar por
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <button class="dropdown-item" id="btnFiltroTodos" type="button">Todos</button>
+                            <button class="dropdown-item" id="btnFiltroAlquiler" type="button">Alquiler</button>
+                            <button class="dropdown-item" id="btnFiltroVenta" type="button">Venta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5"">
+                    <label class="col-form-label">Promedio de precios</label>
+                    <div class="pb-3">
+                        <input class="form-control" type="text" id="txtFiltro" value="N/A" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+           
+        <!-- =================== Section #5 ( Checkboxs ) =================== -->
+        <div class="container-fluid pb-5"></div>
+
+        <div class="section_5 container pb-3 animate__animated animate__fadeInRight">
+            <div class="row text-center custom-control custom-checkbox" id="contenedor-checkboxs">
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="cbox custom-control-input" id="cboxid" value="id" checked>
+                    <label class="custom-control-label" for="cboxid">Id</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="cbox custom-control-input" id="cboxtitulo" value="titulo" checked>
+                    <label class="custom-control-label" for="cboxtitulo">Titulo</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="cbox custom-control-input" id="cboxtransaccion" value="transaccion" checked>
+                    <label class="custom-control-label" for="cboxtransaccion">Transaccion</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="cbox custom-control-input" id="cboxdescripcion" value="descripcion" checked>
+                    <label class="custom-control-label" for="cboxdescripcion">Descripcion</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="cbox custom-control-input" id="cboxprecio" value="precio" checked>
+                    <label class="custom-control-label" for="cboxprecio">Precio</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="cbox custom-control-input" id="cboxnum_puertas" value="num_puertas" checked>
+                    <label class="custom-control-label" for="cboxnum_puertas">Puertas</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="cbox custom-control-input" id="cboxnum_KMs" value="num_KMs" checked>
+                    <label class="custom-control-label" for="cboxnum_KMs">KMs</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="cbox custom-control-input" id="cboxpotencia" value="potencia" checked>
+                    <label class="custom-control-label" for="cboxpotencia">Potencia</label>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- =================== Section #6 ( Tabla ) =================== -->
+
+        <div class="section_6 container pb-3">
+            <div class="row text-center table-responsive" id="divTabla">
+
+            </div>
+        </div>
+
+
+        <!-- =================== Section #7 ( Footer ) =================== -->
+
+        <section class="section_7 container-fluid p-0 text-uppercase">      
+            <footer>
+                <nav class="navbar navbar-expand-lg navbar-light text-center">
+
+                    <div class="col-sm-6">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#"><strong>Nosotros</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#"><strong>Anuncios</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#"><strong>Blog</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#"><strong>Contacto</strong></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-6 footer-copyright py-3">
+                        <strong>Made with ❤️ by Rodi Yago</strong>
+                        <span>-</span>
+                        <strong>Todos los derechos reservados 2020 ©</strong>
+                    </div>
+                </nav>
+            </footer>
+        </section>
+
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

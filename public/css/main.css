@@ -1,0 +1,34 @@
+:root {
+    --border-radius5: 5px;
+    --color-boton: #333;
+    --color-principal: #30BFF2;
+    --color-secundario:#F23D67;
+}
+
+* {
+    letter-spacing: .09em;
+}
+
+nav {
+    background-color: var( --color-principal );
+}
+
+th, td {
+    border-right: 1px solid gray;
+    /* border-left: 1px solid gray; */
+}
+
+thead {
+    background-color: var( --color-principal );
+}
+
+.icon-form {
+    /* border: 1px solid black; */
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 1.5rem;
+}
+
+.desaparecer {
+    display: none;
+}
